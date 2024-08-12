@@ -14,7 +14,10 @@ import {ReactComponent as Logo9} from './images/Logo-colored-8.svg'
 import {ReactComponent as Timer} from './images/timer.svg'
 import {ReactComponent as Branches} from './images/branches.svg'
 import {ReactComponent as Stars} from './images/stars.svg'
+import {ReactComponent as PlayeIcon} from './images/player-icon.svg'
 import mobile from './images/Mobile.png'
+import macBook from './images/Macbook.png'
+import tablet from './images/Picture-Tablet.png'
 
 function App() {
 
@@ -84,6 +87,23 @@ function App() {
                 Dui consectetur gravida platea ut dis diam. Enim morbi proin auctor et nisl phasellus. Ultricies pharetra, id quam facilisis urna, enim.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+      <section className='px-4 py-12 bg-gray-100'>
+        <div className='space-y-8'>
+          <p className='font-bold text-[32px]'>Turpis risus facilisi</p>
+          <p className='text-base'>
+            Augue feugiat mi, massa amet. Id purus aliquam bibendum purus dictum elementum nullam odio tellus. Imperdiet feugiat est odio fames magna orci. Augue purus aliquam, placerat vestibulum dictum pellentesque molestie. Facilisis pretium porta congue proin.
+          </p>
+        </div>
+        <div className=''>
+          <div className='relative w-fit mx-auto mt-16'>
+            <div>
+              <img src={macBook} className='relative' alt="" />
+              <PlayeIcon className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'/>
+            </div>
+            <img src={tablet} className='absolute -top-12 -right-4' alt="" />
           </div>
         </div>
       </section>

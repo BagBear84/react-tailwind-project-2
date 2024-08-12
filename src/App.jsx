@@ -58,7 +58,35 @@ function App() {
           </div>
         </div>
       </section>
-      
+      <section className='px-4 py-12 space-y-8'>
+        <p className='font-bold text-[32px]'>How it works</p>
+        <div className='space-y-8'>
+          <div className='border-4 border-gray-400 rounded-xl'>
+            <div className='px-4 py-8 space-y-4'>
+              <Timer className='mx-auto'/>
+              <p className='text-base text-gray-900'>
+                Dui consectetur gravida platea ut dis diam. Enim morbi proin auctor et nisl phasellus. Ultricies pharetra, id quam facilisis urna, enim.
+              </p>
+            </div>
+          </div>
+          <div className='border-4 border-gray-500 rounded-xl'>
+            <div className='px-4 py-8 space-y-4'>
+              <Branches className='mx-auto'/>
+              <p className='text-base text-gray-900'>
+                Dui consectetur gravida platea ut dis diam. Enim morbi proin auctor et nisl phasellus. Ultricies pharetra, id quam facilisis urna, enim.
+              </p>
+            </div>
+          </div>
+          <div className='border-4 border-gray-600 rounded-xl'>
+            <div className='px-4 py-8 space-y-4'>
+              <Stars className='mx-auto'/>
+              <p className='text-base text-gray-900'>
+                Dui consectetur gravida platea ut dis diam. Enim morbi proin auctor et nisl phasellus. Ultricies pharetra, id quam facilisis urna, enim.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

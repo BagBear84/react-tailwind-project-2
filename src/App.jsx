@@ -18,6 +18,8 @@ import {ReactComponent as PlayeIcon} from './images/player-icon.svg'
 import mobile from './images/Mobile.png'
 import macBook from './images/Macbook.png'
 import tablet from './images/Picture-Tablet.png'
+import artMobile from './images/Col.png'
+import mobiles from './images/ColMobile.png'
 
 function App() {
 
@@ -105,6 +107,28 @@ function App() {
             </div>
             <img src={tablet} className='absolute -top-12 -right-4' alt="" />
           </div>
+        </div>
+      </section>
+      <section className='px-4 py-12 space-y-8 bg-gray-100'>
+        <div className='space-y-8'>
+          <p className='font-bold text-[32px]'>Sagittis sapien viverra</p>
+          <p className='text-base'>
+            Id turpis ante nunc, id tempor. Diam, eros, eget suspendisse dolor tellus. Diam fringilla sed volutpat facilisi. Pulvinar vulputate facilisis vel eros. Auctor metus sed auctor tortor sed nulla. Urna massa eu vel blandit sed nisi gravida. Imperdiet parturient at purus bibendum risus auctor lacus tristique arcu. Arcu hac cursus faucibus id. Eu integer parturient risus magna eget massa. Risus molestie tempor, faucibus non ultricies. Nam vel mattis quis dui, condimentum mi volutpat ut aliquam.
+          </p>
+        </div>
+        <div  className='w-fit mx-auto'>
+          <img src={artMobile} alt="" />
+        </div>
+      </section>
+      <section className='px-4 py-12 space-y-8 bg-gray-100'>
+        <div className='space-y-8'>
+          <p className='font-bold text-[32px]'>Non commodo nec</p>
+          <p className='text-base'>
+            Laoreet amet, lacus sed faucibus. Nec, natoque semper rutrum dui. Curabitur in commodo pretium lacinia feugiat. A ultricies quis commodo, nisl, vestibulum, feugiat dolor. Tincidunt orci consequat, pellentesque leo dui nunc ac, amet. A proin pulvinar nec nibh bibendum. Nec mi mattis vulputate dictum platea pharetra, id id.
+          </p>
+        </div>
+        <div  className='w-fit mx-auto'>
+          <img src={mobiles} alt="" />
         </div>
       </section>
     </div>

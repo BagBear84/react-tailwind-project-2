@@ -14,9 +14,14 @@ import {ReactComponent as Logo8} from './images/Logo-colored-ipsum.svg'
 import {ReactComponent as Logo9} from './images/Logo-colored-8.svg'
 import {ReactComponent as Timer} from './images/timer.svg'
 import {ReactComponent as Branches} from './images/branches.svg'
+import {ReactComponent as Badge} from './images/Badge.svg'
+import {ReactComponent as Vector} from './images/Vector.svg'
 import {ReactComponent as Stars} from './images/stars.svg'
 import {ReactComponent as PlayeIcon} from './images/player-icon.svg'
 import mobile from './images/Mobile.png'
+import world from './images/world.png'
+import euro from './images/euro.png'
+import accessibility from './images/accessibility.png'
 import macBook from './images/Macbook.png'
 import tablet from './images/Picture-Tablet.png'
 import artMobile from './images/Col.png'
@@ -170,6 +175,69 @@ function App() {
           <button className='font-bold text-2xl px-12 py-5 border-2 rounded-full border-white'>Free Launch</button>
         </div>
       </section>
+      <footer className='bg-gray-600 px-4 text-white'>
+        <div className='py-12 space-y-14 border-b border-gray-700'>
+          <p className='font-bold text-[32px]'>mabi</p>
+          <div className=' space-y-6'>
+            <p>Product</p>
+            <div className='text-gray-200 space-y-6'>
+              <p>Pricing</p>
+              <p>Overview</p>
+              <p>Browse</p>
+              <p className='flex justify-center items-center gap-2'>Accessibility<Badge /></p>
+            </div>
+          </div>
+          <div className='space-y-6'>
+            <p>Solutions</p>
+            <div className='text-gray-200 space-y-6'>
+              <p>Brainstorming</p>
+              <p>Ideation</p>
+              <p>Wireframing</p>
+              <p>Research</p>
+            </div>
+          </div>
+          <div className='space-y-6'>
+            <p>Resources</p>
+            <div className='text-gray-200 space-y-6'>
+              <p>Help Center</p>
+              <p>Blog</p>
+              <p>Tutorials</p>
+              <p>FAQs</p>
+            </div>
+          </div>
+          <div className='space-y-6'>
+            <p>Support</p>
+            <div className='text-gray-200 space-y-6'>
+              <p>Contact Us</p>
+              <p>Developers</p>
+              <p>Documentation</p>
+              <p>Integrations</p>
+            </div>
+          </div>
+          <div className='space-y-6'>
+            <p>Company</p>
+            <div className='text-gray-200 space-y-6'>
+              <p>About</p>
+              <p>Press</p>
+              <p>Events</p>
+              <p className='flex justify-center items-center gap-2'>Request Demo<Vector className='w-4 fill-white' /></p>
+            </div>
+          </div>
+        </div>
+        <div className='space-y-4 mt-6'>
+          <p>@ 2023 Mabi. All rights reserved.</p>
+          <div className='flex justify-center gap-8'>
+            <button>Terms</button>
+            <button>Privacy</button>
+            <button>Contact</button>
+          </div>
+          <div className='flex justify-center gap-8 pb-6'>
+            <p className='flex justify-center items-center gap-2'><img src={world} alt="" />EN</p>
+            <p className='flex justify-center items-center gap-2'><img src={euro} alt="" />EUR</p>
+            <p><img src={accessibility} alt="" /></p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }

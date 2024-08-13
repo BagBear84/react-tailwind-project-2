@@ -1,4 +1,5 @@
 import './App.css';
+import { useEffect, useRef, useState } from 'react';
 
 import {ReactComponent as Hamburger} from './images/Buttons Group.svg'
 import {ReactComponent as Logo} from './images/Logo-colored.svg'
@@ -20,8 +21,31 @@ import macBook from './images/Macbook.png'
 import tablet from './images/Picture-Tablet.png'
 import artMobile from './images/Col.png'
 import mobiles from './images/ColMobile.png'
+import desktopmobile from './images/DesktopMobile.png'
+
 
 function App() {
+  const [elHeight , setElHeight] = useState()
+
+  let el1Height;
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      el1Height = Math.round(document.getElementById('Masked').getBoundingClientRect().height)
+      
+      setElHeight(el1Height)
+    },50)
+    return () => {
+      clearTimeout(timer)
+    }
+  }, [])
+
+  // let heightHandler = () => {
+  //   return (
+  //     <div className={`px-4 relative bg-gray-600 z-0 h-[${elHeight}px]`}></div>
+  //   )
+  // }
+
 
   return (
     <div className="App font-roboto text-center">
@@ -92,7 +116,7 @@ function App() {
           </div>
         </div>
       </section>
-      <section className='px-4 py-12 bg-gray-100'>
+      <section className='px-4 py-12 bg-gray-200'>
         <div className='space-y-8'>
           <p className='font-bold text-[32px]'>Turpis risus facilisi</p>
           <p className='text-base'>
@@ -109,7 +133,7 @@ function App() {
           </div>
         </div>
       </section>
-      <section className='px-4 py-12 space-y-8 bg-gray-100'>
+      <section className='px-4 py-12 space-y-8 bg-gray-200'>
         <div className='space-y-8'>
           <p className='font-bold text-[32px]'>Sagittis sapien viverra</p>
           <p className='text-base'>
@@ -120,7 +144,7 @@ function App() {
           <img src={artMobile} alt="" />
         </div>
       </section>
-      <section className='px-4 py-12 space-y-8 bg-gray-100'>
+      <section className='px-4 py-12 space-y-8 bg-gray-200'>
         <div className='space-y-8'>
           <p className='font-bold text-[32px]'>Non commodo nec</p>
           <p className='text-base'>
@@ -129,6 +153,21 @@ function App() {
         </div>
         <div  className='w-fit mx-auto'>
           <img src={mobiles} alt="" />
+        </div>
+      </section>
+      <section className='relative -z-20 bg-gray-200'>
+        
+        <div className='relative pt-20'>
+          <div className='bg-gray-600 absolute top-0 right-0 left-0 bottom-0 -z-10 [clip-path:polygon(5%_50%,0%_100%,100%_100%,100%_0%)]'></div>
+
+          <div className='bg-transparent mx-auto w-fit'>
+            <img src={desktopmobile} id='Masked' alt="" />
+          </div>
+        </div>
+        <div className='bg-gray-600 space-y-8 text-white pb-20'>
+          <p className='font-bold text-[32px]'>Launch Your App Today</p>
+          <p className='text-base'>Amet nunc diam orci duis ut sit diam arcu, nec. Eleifend proin massa tincidunt viverra lectus pulvinar.</p>
+          <button className='font-bold text-2xl px-12 py-5 border-2 rounded-full border-white'>Free Launch</button>
         </div>
       </section>
     </div>

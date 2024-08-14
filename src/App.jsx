@@ -57,8 +57,8 @@ function App() {
       <header className='bg-gray-600 '>
         <div className=' flex items-center justify-between p-4 font-bold text-[32px] text-white'><p>mabi</p><button><Hamburger className='fill-white'/></button></div>
       </header>
-      <section className='text-white bg-gray-600'>
-        <div className='space-y-8 px-4 pt-7 pb-8'>
+      <section className='text-white '>
+        <div className='space-y-8 px-4 pt-7 pb-8 bg-gray-600'>
           <div className='font-bold'>
             <p className='text-[40px]'>Launch Your App</p>
             <p className='text-[32px] text-gray-300'>Grow Your Business</p>
@@ -67,8 +67,12 @@ function App() {
           <button className='font-bold text-2xl px-12 py-5 border-2 rounded-full border-white'>Free Launch</button>
         </div>
         
-        <div className='mx-auto w-fit'>
-          <img src={mobile} alt="" />
+        <div className='relative'>
+          <div className='absolute inset-0 -top-1 -z-10 bg-gray-600 [clip-path:polygon(0%_0%,0%_85%,100%_75%,100%_0%)]'></div>
+
+          <div className='mx-auto w-fit z-20'>
+            <img src={mobile} alt="" />
+          </div>
         </div>
         <div className='bg-gray-100'>
           <div className='py-12 px-4 space-y-8'>
@@ -76,17 +80,17 @@ function App() {
             <div className='flex flex-col space-y-4 items-center'>
               <div className='flex gap-4 flex-wrap'>
                 <div className='flex font-bold text-xs items-center gap-1 text-gray-900'><Logo className='w-5 h-5' /><p>Astrom</p></div>
-                <div className='flex font-bold text-xs items-center gap-1 text-gray-900'><Logo1 className='w-5 h-4' /><p>Astrom</p></div>
-                <div className='flex font-bold text-xs items-center gap-1 text-gray-900'><Logo2 className='w-5 h-4' /><p>Astrom</p></div>
-                <div className='flex font-bold text-xs items-center gap-1 text-gray-900'><Logo3 className='w-5 h-5' /><p>Astrom</p></div>
-                <div className='flex font-bold text-xs items-center gap-1 text-gray-900'><Logo4 className='w-6 h-5' /><p>Astrom</p></div>
+                <div className='flex font-bold text-xs items-center gap-1 text-gray-900'><Logo1 className='w-5 h-4' /><p>cicio</p></div>
+                <div className='flex font-bold text-xs items-center gap-1 text-gray-900'><Logo2 className='w-5 h-4' /><p>weavy</p></div>
+                <div className='flex font-bold text-xs items-center gap-1 text-gray-900'><Logo3 className='w-5 h-5' /><p>vRokets</p></div>
+                <div className='flex font-bold text-xs items-center gap-1 text-gray-900'><Logo4 className='w-6 h-5' /><p>viewio</p></div>
               </div>
               <div className='flex gap-4 flex-wrap'>
-                <div className='flex font-bold text-xs items-center gap-1 text-gray-900'><Logo5 className='w-5 h-4' /><p>Astrom</p></div>
-                <div className='font-bold text-xs text-gray-900'><Logo6 className='w-8 h-3' /><p>Astrom</p></div>
-                <div className='flex font-bold text-xs gap-1 items-center text-gray-900'><Logo7 className='w-5 h-5' /><p>Astrom</p></div>
-                <div className='flex font-bold text-xs gap-1 items-center text-gray-900'><Logo8 className='w-5 h-5' /><p>Astrom</p></div>
-                <div className='flex font-bold text-xs gap-1 items-center text-gray-900'><Logo9 className='w-5 h-3' /><p>Astrom</p></div>
+                <div className='flex font-bold text-xs items-center gap-1 text-gray-900'><Logo5 className='w-5 h-4' /><p>Metablu</p></div>
+                <div className='font-bold text-xs text-gray-900'><Logo6 className='w-8 h-3' /><p>Buildaa</p></div>
+                <div className='flex font-bold text-xs gap-1 items-center text-gray-900'><Logo7 className='w-5 h-5' /><p>hapi</p></div>
+                <div className='flex font-bold text-xs gap-1 items-center text-gray-900'><Logo8 className='w-8 h-8' /></div>
+                <div className='flex font-bold text-xs gap-1 items-center text-gray-900'><Logo9 className='w-5 h-3' /><p>virtuo</p></div>
               </div>
             </div>
           </div>
@@ -121,7 +125,7 @@ function App() {
           </div>
         </div>
       </section>
-      <section className='px-4 py-12 bg-gray-200'>
+      <section className='px-4 py-12 bg-gray-100'>
         <div className='space-y-8'>
           <p className='font-bold text-[32px]'>Turpis risus facilisi</p>
           <p className='text-base'>
@@ -138,7 +142,7 @@ function App() {
           </div>
         </div>
       </section>
-      <section className='px-4 py-12 space-y-8 bg-gray-200'>
+      <section className='px-4 py-12 space-y-8 bg-gray-100'>
         <div className='space-y-8'>
           <p className='font-bold text-[32px]'>Sagittis sapien viverra</p>
           <p className='text-base'>
@@ -149,7 +153,7 @@ function App() {
           <img src={artMobile} alt="" />
         </div>
       </section>
-      <section className='px-4 py-12 space-y-8 bg-gray-200'>
+      <section className='px-4 py-12 space-y-8 bg-gray-100'>
         <div className='space-y-8'>
           <p className='font-bold text-[32px]'>Non commodo nec</p>
           <p className='text-base'>
@@ -160,10 +164,10 @@ function App() {
           <img src={mobiles} alt="" />
         </div>
       </section>
-      <section className='relative -z-20 bg-gray-200'>
+      <section className='relative -z-20 bg-gray-100'>
         
         <div className='relative pt-20'>
-          <div className='bg-gray-600 absolute top-0 right-0 left-0 bottom-0 -z-10 [clip-path:polygon(5%_50%,0%_100%,100%_100%,100%_0%)]'></div>
+          <div className='bg-gray-600 absolute inset-0 -bottom-1 -z-10 [clip-path:polygon(5%_50%,0%_100%,100%_100%,100%_0%)]'></div>
 
           <div className='bg-transparent mx-auto w-fit'>
             <img src={desktopmobile} id='Masked' alt="" />

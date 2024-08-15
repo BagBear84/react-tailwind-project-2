@@ -152,12 +152,12 @@ function App() {
           </p>
         </div>
         <div className=''>
-          <div className='relative w-fit mx-auto 3xl:w-full 3xl:mx-0 mt-16 lg:mt-0'>
+          <div className='relative mx-auto w-fit lg:w-full 3xl:mx-0 mt-16 lg:mt-0'>
             <div>
-              <img src={macBook} className='relative 3xl:w-full' alt="" />
+              <img src={macBook} className='relative lg:w-full' alt="" />
               <PlayeIcon className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'/>
             </div>
-            <img src={tablet} className='absolute -top-12 -right-4 3xl:w-2/5' alt="" />
+            <img src={tablet} className='absolute -top-12 -right-4 lg:w-2/5' alt="" />
           </div>
         </div>
       </section>
@@ -168,8 +168,8 @@ function App() {
             Id turpis ante nunc, id tempor. Diam, eros, eget suspendisse dolor tellus. Diam fringilla sed volutpat facilisi. Pulvinar vulputate facilisis vel eros. Auctor metus sed auctor tortor sed nulla. Urna massa eu vel blandit sed nisi gravida. Imperdiet parturient at purus bibendum risus auctor lacus tristique arcu. Arcu hac cursus faucibus id. Eu integer parturient risus magna eget massa. Risus molestie tempor, faucibus non ultricies. Nam vel mattis quis dui, condimentum mi volutpat ut aliquam.
           </p>
         </div>
-        <div  className='w-fit mx-auto 3xl:w-full 3xl:mx-0 lg:col-span-2'>
-          <img src={artMobile} className='w-5/6' alt="" />
+        <div  className='mx-auto w-fit lg:w-full 3xl:mx-0 lg:col-span-2'>
+          <img src={artMobile} className='lg:w-5/6' alt="" />
         </div>
       </section>
       <section className='px-4 py-12 lg:p-20 lg:items-center space-y-8 bg-gray-100 lg:grid lg:grid-cols-5'>
@@ -179,8 +179,8 @@ function App() {
             Laoreet amet, lacus sed faucibus. Nec, natoque semper rutrum dui. Curabitur in commodo pretium lacinia feugiat. A ultricies quis commodo, nisl, vestibulum, feugiat dolor. Tincidunt orci consequat, pellentesque leo dui nunc ac, amet. A proin pulvinar nec nibh bibendum. Nec mi mattis vulputate dictum platea pharetra, id id.
           </p>
         </div>
-        <div  className='w-fit mx-auto 3xl:w-full 3xl:mx-0 lg:col-span-2'>
-          <img src={mobiles} className='w-5/6' alt="" />
+        <div  className=' mx-auto w-fit lg:w-full 3xl:mx-0 lg:col-span-2'>
+          <img src={mobiles} className='lg:w-5/6' alt="" />
         </div>
       </section>
       <section className='relative -z-20 bg-gray-100'>
